@@ -12,6 +12,8 @@ export const metadata: Metadata = {
 }
 
 import SmoothScroll from '@/components/SmoothScroll'
+import SoundControl from '@/components/SoundControl'
+import CVButton from '@/components/CVButton'
 
 export default function RootLayout({
     children,
@@ -21,6 +23,8 @@ export default function RootLayout({
     return (
         <html lang="es" className={`${inter.variable} ${outfit.variable} ${spaceGrotesk.variable}`}>
             <body className="bg-[#0a0a0a] text-white">
+                <CVButton />
+                <SoundControl />
                 <SmoothScroll>
                     {children}
                 </SmoothScroll>

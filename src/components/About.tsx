@@ -10,6 +10,11 @@ const stats = [
     { label: 'Foco Principal', value: 'AI/ML & DevOps' },
 ];
 
+const languages = [
+    { label: 'Idioma Materno', value: 'Español', sublabel: 'Nativo' },
+    { label: 'Professional Working Proficiency', value: 'Inglés', sublabel: 'B2' },
+];
+
 export default function About() {
     return (
         <section className="px-6 md:px-16 lg:px-24 bg-[#0a0a0a] overflow-hidden">
@@ -73,6 +78,32 @@ export default function About() {
                                     </div>
                                     <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono font-bold">
                                         {stat.label}
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+
+                        {/* Languages Grid */}
+                        <div className="grid grid-cols-2 gap-4 mt-4">
+                            {languages.map((lang, index) => (
+                                <motion.div
+                                    key={lang.value}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                                    className="p-6 bg-white/5 border border-white/5 rounded-sm backdrop-blur-sm transition-all hover:border-primary/30 hover:shadow-[0_0_20px_rgba(0,240,255,0.1)] group"
+                                >
+                                    <div className="flex items-baseline gap-2 mb-1">
+                                        <span className="text-2xl font-display font-bold text-white group-hover:text-primary transition-colors duration-300">
+                                            {lang.sublabel}
+                                        </span>
+                                        <span className="text-sm font-body text-gray-400">
+                                            {lang.value}
+                                        </span>
+                                    </div>
+                                    <div className="text-[9px] text-gray-500 uppercase tracking-widest font-mono">
+                                        {lang.label}
                                     </div>
                                 </motion.div>
                             ))}

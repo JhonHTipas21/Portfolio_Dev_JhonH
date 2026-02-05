@@ -6,16 +6,16 @@ const experiences = [
     {
         company: 'OUTLIER AI',
         role: 'AI Trainer & Prompt Engineer',
-        period: '2024 - Presente',
-        description: 'Entrenamiento de LLMs mediante técnicas de RLHF y Prompt Engineering. Optimización de respuestas y evaluación de modelos de IA.',
-        tags: ['Next.js', 'Python', 'LLMs', 'Prompt Engineering'],
+        period: '2024 (6 Meses)',
+        description: 'Entrené y refiné LLMs mediante técnicas de RLHF y Prompt Engineering. Optimicé respuestas y evalué modelos de IA con métricas de calidad.',
+        tags: ['Python', 'Machine Learning', 'TensorFlow', 'PyTorch', 'LLMs'],
     },
     {
         company: 'Freelance Developer',
         role: 'Full Stack Developer',
         period: '2021 - Presente',
         description: 'Desarrollo de aplicaciones web completas utilizando Next.js, Node.js y AWS. Diseño de APIs y despliegue de infraestructuras escalables.',
-        tags: ['React', 'PostgreSQL', 'AWS', 'Docker'],
+        tags: ['Python', 'Java', 'TypeScript', 'JavaScript', 'HTML & CSS', 'AWS', 'Docker', 'Git', 'FastAPI', 'Django', '.NET', 'React', 'Vue.js', 'Next.js', 'MySQL', 'Redis'],
     },
     {
         company: 'Universidad Santiago de Cali',

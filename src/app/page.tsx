@@ -5,6 +5,7 @@ import TechCloud from '@/components/TechCloud'
 import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Education from '@/components/Education'
+import Contact from '@/components/Contact'
 import SectionWrapper from '@/components/SectionWrapper'
 
 export default function Home() {
@@ -36,6 +37,10 @@ export default function Home() {
 
             <SectionWrapper>
                 <Education />
+            </SectionWrapper>
+
+            <SectionWrapper>
+                <Contact />
             </SectionWrapper>
         </main>
     )

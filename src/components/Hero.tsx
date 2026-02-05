@@ -4,6 +4,10 @@ import { motion } from 'framer-motion';
 import Robot3D from './Robot3D';
 
 export default function Hero() {
+    const scrollToSection = (id: string) => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -64,13 +68,19 @@ export default function Hero() {
                 </motion.p>
 
                 <motion.div variants={itemVariants} className="flex flex-wrap gap-5">
-                    <button className="group relative px-10 py-4 bg-primary text-black font-bold rounded-sm overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] active:scale-95">
+                    <button
+                        onClick={() => scrollToSection('projects')}
+                        className="group relative px-10 py-4 bg-primary text-black font-bold rounded-sm overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] active:scale-95"
+                    >
                         <span className="relative z-10">VER PROYECTOS</span>
                         <div className="absolute inset-0 bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-300" />
                         <span className="absolute inset-0 z-10 flex items-center justify-center text-black font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">VER PROYECTOS</span>
                     </button>
 
-                    <button className="px-10 py-4 border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 rounded-sm font-bold text-white tracking-widest text-sm active:scale-95">
+                    <button
+                        onClick={() => scrollToSection('contact')}
+                        className="px-10 py-4 border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 rounded-sm font-bold text-white tracking-widest text-sm active:scale-95"
+                    >
                         CONTACTO
                     </button>
                 </motion.div>
